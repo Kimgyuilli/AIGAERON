@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7bebaa89fbcdca2af0707e7d65bb4740 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7bebaa89fbcdca2af0707e7d65bb4740" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7bebaa89fbcdca2af0707e7d65bb4740 = L.map(
+                "map_7bebaa89fbcdca2af0707e7d65bb4740",
+                {
+                    center: [37.59491732, 126.9773213],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ad596629618f5f42a16311fdaa357483 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_ad596629618f5f42a16311fdaa357483.addTo(map_7bebaa89fbcdca2af0707e7d65bb4740);
+        
+    
+            var marker_1ba49c7fd8772b302fc101c92a047594 = L.marker(
+                [37.53138497, 126.979907],
+                {}
+            ).addTo(map_7bebaa89fbcdca2af0707e7d65bb4740);
+        
+    
+            var icon_d9c4d6cbd12c415ebc7a63d7a01148db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1ba49c7fd8772b302fc101c92a047594.setIcon(icon_d9c4d6cbd12c415ebc7a63d7a01148db);
+        
+    
+        var popup_0566e6b41f5db8654d80e9c2b26b947e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_88587927673129939bc84bfafc652c4d = $(`<div id="html_88587927673129939bc84bfafc652c4d" style="width: 100.0%; height: 100.0%;">용산구:  미세먼지 27㎍/㎥</div>`)[0];
+                popup_0566e6b41f5db8654d80e9c2b26b947e.setContent(html_88587927673129939bc84bfafc652c4d);
+            
+        
+
+        marker_1ba49c7fd8772b302fc101c92a047594.bindPopup(popup_0566e6b41f5db8654d80e9c2b26b947e)
+        ;
+
+        
+    
+    
+            var marker_19e828a511763008d80248642077f676 = L.marker(
+                [37.56014356, 126.9959681],
+                {}
+            ).addTo(map_7bebaa89fbcdca2af0707e7d65bb4740);
+        
+    
+            var icon_63b6169452aa7cc01e9fe02f1d0ca643 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_19e828a511763008d80248642077f676.setIcon(icon_63b6169452aa7cc01e9fe02f1d0ca643);
+        
+    
+        var popup_eb53229e2f679e75649d7c170d7a60e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4079483b8a41952c159be73e7b41eff = $(`<div id="html_f4079483b8a41952c159be73e7b41eff" style="width: 100.0%; height: 100.0%;">중구:  미세먼지 19㎍/㎥</div>`)[0];
+                popup_eb53229e2f679e75649d7c170d7a60e3.setContent(html_f4079483b8a41952c159be73e7b41eff);
+            
+        
+
+        marker_19e828a511763008d80248642077f676.bindPopup(popup_eb53229e2f679e75649d7c170d7a60e3)
+        ;
+
+        
+    
+    
+            var marker_018569ed9c04cda2e7358bd8bd6ba67d = L.marker(
+                [37.59491732, 126.9773213],
+                {}
+            ).addTo(map_7bebaa89fbcdca2af0707e7d65bb4740);
+        
+    
+            var icon_35579fa6b4f9bb7b1636202bb96a0d87 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_018569ed9c04cda2e7358bd8bd6ba67d.setIcon(icon_35579fa6b4f9bb7b1636202bb96a0d87);
+        
+    
+        var popup_3fb120c9081061cd090344f29c3970e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_49f6b78004d069710c44503bee1ac14a = $(`<div id="html_49f6b78004d069710c44503bee1ac14a" style="width: 100.0%; height: 100.0%;">종로구:  미세먼지 24㎍/㎥</div>`)[0];
+                popup_3fb120c9081061cd090344f29c3970e9.setContent(html_49f6b78004d069710c44503bee1ac14a);
+            
+        
+
+        marker_018569ed9c04cda2e7358bd8bd6ba67d.bindPopup(popup_3fb120c9081061cd090344f29c3970e9)
+        ;
+
+        
+    
+    
+            var marker_5f7f940cb13f2e1cd810603ab3eedcb0 = L.marker(
+                [37.61921128, 126.9270229],
+                {}
+            ).addTo(map_7bebaa89fbcdca2af0707e7d65bb4740);
+        
+    
+            var icon_11b2b22ac69cfd010b409a0642ea0d17 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5f7f940cb13f2e1cd810603ab3eedcb0.setIcon(icon_11b2b22ac69cfd010b409a0642ea0d17);
+        
+    
+        var popup_5c71be54fe44dcba4faab35296e59f65 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2935a7ba4953edfa99de3c2d958f6b4 = $(`<div id="html_a2935a7ba4953edfa99de3c2d958f6b4" style="width: 100.0%; height: 100.0%;">은평구:  미세먼지 26㎍/㎥</div>`)[0];
+                popup_5c71be54fe44dcba4faab35296e59f65.setContent(html_a2935a7ba4953edfa99de3c2d958f6b4);
+            
+        
+
+        marker_5f7f940cb13f2e1cd810603ab3eedcb0.bindPopup(popup_5c71be54fe44dcba4faab35296e59f65)
+        ;
+
+        
+    
+    
+            var marker_6bf08bf7df7d095f077ee883b58d83e2 = L.marker(
+                [37.55931349, 126.90827],
+                {}
+            ).addTo(map_7bebaa89fbcdca2af0707e7d65bb4740);
+        
+    
+            var icon_738a1af81e5611d00b81a72669999823 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "remove", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6bf08bf7df7d095f077ee883b58d83e2.setIcon(icon_738a1af81e5611d00b81a72669999823);
+        
+    
+        var popup_e2e4c3ed4ef32cec757cb9850674061c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84941b02de2e2506a6c44f95a238e31d = $(`<div id="html_84941b02de2e2506a6c44f95a238e31d" style="width: 100.0%; height: 100.0%;">마포구:  미세먼지 35㎍/㎥</div>`)[0];
+                popup_e2e4c3ed4ef32cec757cb9850674061c.setContent(html_84941b02de2e2506a6c44f95a238e31d);
+            
+        
+
+        marker_6bf08bf7df7d095f077ee883b58d83e2.bindPopup(popup_e2e4c3ed4ef32cec757cb9850674061c)
+        ;
+
+        
+    
+    
+            var marker_639a948b753cd03308efc9c38b797923 = L.marker(
+                [37.57778531, 126.9390631],
+                {}
+            ).addTo(map_7bebaa89fbcdca2af0707e7d65bb4740);
+        
+    
+            var icon_abbbbbee005c1069ce23fd383202c4f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_639a948b753cd03308efc9c38b797923.setIcon(icon_abbbbbee005c1069ce23fd383202c4f1);
+        
+    
+        var popup_2df949587e7efdfa1f04e4e2fb8976e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f0584ccae23ce4d4408ef373d32a0f1 = $(`<div id="html_1f0584ccae23ce4d4408ef373d32a0f1" style="width: 100.0%; height: 100.0%;">서대문구:  미세먼지 25㎍/㎥</div>`)[0];
+                popup_2df949587e7efdfa1f04e4e2fb8976e6.setContent(html_1f0584ccae23ce4d4408ef373d32a0f1);
+            
+        
+
+        marker_639a948b753cd03308efc9c38b797923.bindPopup(popup_2df949587e7efdfa1f04e4e2fb8976e6)
+        ;
+
+        
+    
+    
+            var marker_8958ec57355ebf3be7bf343d3f9d82fe = L.marker(
+                [37.55102969, 127.0410585],
+                {}
+            ).addTo(map_7bebaa89fbcdca2af0707e7d65bb4740);
+        
+    
+            var icon_dabd8ccf33d8099245adf26778b0e3be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8958ec57355ebf3be7bf343d3f9d82fe.setIcon(icon_dabd8ccf33d8099245adf26778b0e3be);
+        
+    
+        var popup_78df70d46ae44c402e253762cf74016b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7695e73fcfd1570fb45b62d645db643e = $(`<div id="html_7695e73fcfd1570fb45b62d645db643e" style="width: 100.0%; height: 100.0%;">성동구:  미세먼지 24㎍/㎥</div>`)[0];
+                popup_78df70d46ae44c402e253762cf74016b.setContent(html_7695e73fcfd1570fb45b62d645db643e);
+            
+        
+
+        marker_8958ec57355ebf3be7bf343d3f9d82fe.bindPopup(popup_78df70d46ae44c402e253762cf74016b)
+        ;
+
+        
+    
+    
+            var marker_f1d05fee75e4e0ca992185225eed6b7b = L.marker(
+                [37.58195655, 127.0548481],
+                {}
+            ).addTo(map_7bebaa89fbcdca2af0707e7d65bb4740);
+        
+    
+            var icon_98294aac5adb3c7b54f4032aaec5ffd0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "remove", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f1d05fee75e4e0ca992185225eed6b7b.setIcon(icon_98294aac5adb3c7b54f4032aaec5ffd0);
+        
+    
+        var popup_1da5e6cd1e278bb00e180f21a1fa37d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b641a16edd6a3999d22a5ed4e34f7839 = $(`<div id="html_b641a16edd6a3999d22a5ed4e34f7839" style="width: 100.0%; height: 100.0%;">동대문구:  미세먼지 34㎍/㎥</div>`)[0];
+                popup_1da5e6cd1e278bb00e180f21a1fa37d1.setContent(html_b641a16edd6a3999d22a5ed4e34f7839);
+            
+        
+
+        marker_f1d05fee75e4e0ca992185225eed6b7b.bindPopup(popup_1da5e6cd1e278bb00e180f21a1fa37d1)
+        ;
+
+        
+    
+    
+            var marker_ab35307f358ba50fa939383af83a359b = L.marker(
+                [37.64347391, 127.011189],
+                {}
+            ).addTo(map_7bebaa89fbcdca2af0707e7d65bb4740);
+        
+    
+            var icon_a87d8e54bea3e59229dbcbc5157059ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ab35307f358ba50fa939383af83a359b.setIcon(icon_a87d8e54bea3e59229dbcbc5157059ee);
+        
+    
+        var popup_98114c596c8b53e53c4cc7e455fdec03 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b0d2f1979eb289d725e251c998cd642 = $(`<div id="html_2b0d2f1979eb289d725e251c998cd642" style="width: 100.0%; height: 100.0%;">강북구:  미세먼지 24㎍/㎥</div>`)[0];
+                popup_98114c596c8b53e53c4cc7e455fdec03.setContent(html_2b0d2f1979eb289d725e251c998cd642);
+            
+        
+
+        marker_ab35307f358ba50fa939383af83a359b.bindPopup(popup_98114c596c8b53e53c4cc7e455fdec03)
+        ;
+
+        
+    
+    
+            var marker_fd0bd9b0045741cc89f99a95774cbbad = L.marker(
+                [37.66910208, 127.0323688],
+                {}
+            ).addTo(map_7bebaa89fbcdca2af0707e7d65bb4740);
+        
+    
+            var icon_f2f0b97cbcfec113df23ed1f7050fd2c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fd0bd9b0045741cc89f99a95774cbbad.setIcon(icon_f2f0b97cbcfec113df23ed1f7050fd2c);
+        
+    
+        var popup_d4e0ce911ea5d7557a0ccb6ed688bcfc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a74201eb113c0987966ecc2d6293517 = $(`<div id="html_2a74201eb113c0987966ecc2d6293517" style="width: 100.0%; height: 100.0%;">도봉구:  미세먼지 23㎍/㎥</div>`)[0];
+                popup_d4e0ce911ea5d7557a0ccb6ed688bcfc.setContent(html_2a74201eb113c0987966ecc2d6293517);
+            
+        
+
+        marker_fd0bd9b0045741cc89f99a95774cbbad.bindPopup(popup_d4e0ce911ea5d7557a0ccb6ed688bcfc)
+        ;
+
+        
+    
+    
+            var marker_a2099f48ff9e2cfa90cc078bbd9b88b4 = L.marker(
+                [37.54670608, 127.0857435],
+                {}
+            ).addTo(map_7bebaa89fbcdca2af0707e7d65bb4740);
+        
+    
+            var icon_31778147fd1ece972a293383ebc714c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a2099f48ff9e2cfa90cc078bbd9b88b4.setIcon(icon_31778147fd1ece972a293383ebc714c5);
+        
+    
+        var popup_0c5d73098086a398ed1ed21255108a69 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34173e163581d37b518860cc2f96be0b = $(`<div id="html_34173e163581d37b518860cc2f96be0b" style="width: 100.0%; height: 100.0%;">광진구:  미세먼지 23㎍/㎥</div>`)[0];
+                popup_0c5d73098086a398ed1ed21255108a69.setContent(html_34173e163581d37b518860cc2f96be0b);
+            
+        
+
+        marker_a2099f48ff9e2cfa90cc078bbd9b88b4.bindPopup(popup_0c5d73098086a398ed1ed21255108a69)
+        ;
+
+        
+    
+    
+            var marker_cae5a3599f3316ea1e7ddf7f1d1b6461 = L.marker(
+                [37.6057019, 127.0175795],
+                {}
+            ).addTo(map_7bebaa89fbcdca2af0707e7d65bb4740);
+        
+    
+            var icon_3b51fe2fbcbbb2a33bf20161d3b3f796 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cae5a3599f3316ea1e7ddf7f1d1b6461.setIcon(icon_3b51fe2fbcbbb2a33bf20161d3b3f796);
+        
+    
+        var popup_bc2095b637fa4538c8d484a98fee9da9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e492b8795e97421a739611abfe2f50d = $(`<div id="html_5e492b8795e97421a739611abfe2f50d" style="width: 100.0%; height: 100.0%;">성북구:  미세먼지 24㎍/㎥</div>`)[0];
+                popup_bc2095b637fa4538c8d484a98fee9da9.setContent(html_5e492b8795e97421a739611abfe2f50d);
+            
+        
+
+        marker_cae5a3599f3316ea1e7ddf7f1d1b6461.bindPopup(popup_bc2095b637fa4538c8d484a98fee9da9)
+        ;
+
+        
+    
+    
+            var marker_4da1d3f5a93175262d3d685ccd59fa2b = L.marker(
+                [37.59780259, 127.0928803],
+                {}
+            ).addTo(map_7bebaa89fbcdca2af0707e7d65bb4740);
+        
+    
+            var icon_a324e2ee8a0304b339ebf6f758eaffa9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4da1d3f5a93175262d3d685ccd59fa2b.setIcon(icon_a324e2ee8a0304b339ebf6f758eaffa9);
+        
+    
+        var popup_eb01d62678d093e74c540c0e71a7f444 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79bdeecfe98b04b584bbe1b044326bd9 = $(`<div id="html_79bdeecfe98b04b584bbe1b044326bd9" style="width: 100.0%; height: 100.0%;">중랑구:  미세먼지 26㎍/㎥</div>`)[0];
+                popup_eb01d62678d093e74c540c0e71a7f444.setContent(html_79bdeecfe98b04b584bbe1b044326bd9);
+            
+        
+
+        marker_4da1d3f5a93175262d3d685ccd59fa2b.bindPopup(popup_eb01d62678d093e74c540c0e71a7f444)
+        ;
+
+        
+    
+    
+            var marker_160a68346c2af1b38e42e7e38915951e = L.marker(
+                [37.65251105, 127.0750347],
+                {}
+            ).addTo(map_7bebaa89fbcdca2af0707e7d65bb4740);
+        
+    
+            var icon_62a5e5e4feca7494da5413f80c27006c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_160a68346c2af1b38e42e7e38915951e.setIcon(icon_62a5e5e4feca7494da5413f80c27006c);
+        
+    
+        var popup_ef60ad4dccdf13a071149cf372082033 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f35d9403a4209da879790ab5b6ede79 = $(`<div id="html_6f35d9403a4209da879790ab5b6ede79" style="width: 100.0%; height: 100.0%;">노원구:  미세먼지 26㎍/㎥</div>`)[0];
+                popup_ef60ad4dccdf13a071149cf372082033.setContent(html_6f35d9403a4209da879790ab5b6ede79);
+            
+        
+
+        marker_160a68346c2af1b38e42e7e38915951e.bindPopup(popup_ef60ad4dccdf13a071149cf372082033)
+        ;
+
+        
+    
+    
+            var marker_d455f822931e7a5651e93e3f7e471e2c = L.marker(
+                [37.52478941, 126.8554777],
+                {}
+            ).addTo(map_7bebaa89fbcdca2af0707e7d65bb4740);
+        
+    
+            var icon_bfc1fae794e016065ffe919ece7b9d1b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d455f822931e7a5651e93e3f7e471e2c.setIcon(icon_bfc1fae794e016065ffe919ece7b9d1b);
+        
+    
+        var popup_914eb0ccab3ec6dd5b0912b7b46988e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ed3f015c5d9953fc9152d12ba1a54a3 = $(`<div id="html_7ed3f015c5d9953fc9152d12ba1a54a3" style="width: 100.0%; height: 100.0%;">양천구:  미세먼지 26㎍/㎥</div>`)[0];
+                popup_914eb0ccab3ec6dd5b0912b7b46988e4.setContent(html_7ed3f015c5d9953fc9152d12ba1a54a3);
+            
+        
+
+        marker_d455f822931e7a5651e93e3f7e471e2c.bindPopup(popup_914eb0ccab3ec6dd5b0912b7b46988e4)
+        ;
+
+        
+    
+    
+            var marker_038c8d04c058f3d32ddac146b1b55778 = L.marker(
+                [37.52230829, 126.9101695],
+                {}
+            ).addTo(map_7bebaa89fbcdca2af0707e7d65bb4740);
+        
+    
+            var icon_071eb26912db6346981d68802dcfbbc4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_038c8d04c058f3d32ddac146b1b55778.setIcon(icon_071eb26912db6346981d68802dcfbbc4);
+        
+    
+        var popup_3ab7d92c35928463dc4cf359a4d44e23 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f3a04a0768caac17b7de202718270cf = $(`<div id="html_6f3a04a0768caac17b7de202718270cf" style="width: 100.0%; height: 100.0%;">영등포구:  미세먼지 23㎍/㎥</div>`)[0];
+                popup_3ab7d92c35928463dc4cf359a4d44e23.setContent(html_6f3a04a0768caac17b7de202718270cf);
+            
+        
+
+        marker_038c8d04c058f3d32ddac146b1b55778.bindPopup(popup_3ab7d92c35928463dc4cf359a4d44e23)
+        ;
+
+        
+    
+    
+            var marker_b17fc676bac1cf821b9d6757c2c9e390 = L.marker(
+                [37.46056756, 126.9008202],
+                {}
+            ).addTo(map_7bebaa89fbcdca2af0707e7d65bb4740);
+        
+    
+            var icon_d11c5a761986d571872f326f1558fda5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b17fc676bac1cf821b9d6757c2c9e390.setIcon(icon_d11c5a761986d571872f326f1558fda5);
+        
+    
+        var popup_823dc7fc01dd557b92fb9cfc9f6baef5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_699219be9eb746288cde84b8fa8a6f79 = $(`<div id="html_699219be9eb746288cde84b8fa8a6f79" style="width: 100.0%; height: 100.0%;">금천구:  미세먼지 23㎍/㎥</div>`)[0];
+                popup_823dc7fc01dd557b92fb9cfc9f6baef5.setContent(html_699219be9eb746288cde84b8fa8a6f79);
+            
+        
+
+        marker_b17fc676bac1cf821b9d6757c2c9e390.bindPopup(popup_823dc7fc01dd557b92fb9cfc9f6baef5)
+        ;
+
+        
+    
+    
+            var marker_fab069f38a127d9205a66d1bcec3d4f6 = L.marker(
+                [37.56123543, 126.822807],
+                {}
+            ).addTo(map_7bebaa89fbcdca2af0707e7d65bb4740);
+        
+    
+            var icon_041a417f2cbaf5c8d82399b895eabeeb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fab069f38a127d9205a66d1bcec3d4f6.setIcon(icon_041a417f2cbaf5c8d82399b895eabeeb);
+        
+    
+        var popup_01eff158ae6c5128de9f7a5bbef5c97a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86e664b509a8885286ce03d2d14c23f7 = $(`<div id="html_86e664b509a8885286ce03d2d14c23f7" style="width: 100.0%; height: 100.0%;">강서구:  미세먼지 25㎍/㎥</div>`)[0];
+                popup_01eff158ae6c5128de9f7a5bbef5c97a.setContent(html_86e664b509a8885286ce03d2d14c23f7);
+            
+        
+
+        marker_fab069f38a127d9205a66d1bcec3d4f6.bindPopup(popup_01eff158ae6c5128de9f7a5bbef5c97a)
+        ;
+
+        
+    
+    
+            var marker_2dfeb8069cbe5ac80035e3de4cfbe198 = L.marker(
+                [37.46737569, 126.9453372],
+                {}
+            ).addTo(map_7bebaa89fbcdca2af0707e7d65bb4740);
+        
+    
+            var icon_c2eb5b914902481667d6214e5f351036 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2dfeb8069cbe5ac80035e3de4cfbe198.setIcon(icon_c2eb5b914902481667d6214e5f351036);
+        
+    
+        var popup_07673c3ee1a898de232c49699b9072c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c83ff27eae85f444b22c3cd558eb890 = $(`<div id="html_7c83ff27eae85f444b22c3cd558eb890" style="width: 100.0%; height: 100.0%;">관악구:  미세먼지 26㎍/㎥</div>`)[0];
+                popup_07673c3ee1a898de232c49699b9072c9.setContent(html_7c83ff27eae85f444b22c3cd558eb890);
+            
+        
+
+        marker_2dfeb8069cbe5ac80035e3de4cfbe198.bindPopup(popup_07673c3ee1a898de232c49699b9072c9)
+        ;
+
+        
+    
+    
+            var marker_9281a11297708d151f4829760f448617 = L.marker(
+                [37.49887688, 126.9516415],
+                {}
+            ).addTo(map_7bebaa89fbcdca2af0707e7d65bb4740);
+        
+    
+            var icon_f1314bd753be08035f84b63e099b0254 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9281a11297708d151f4829760f448617.setIcon(icon_f1314bd753be08035f84b63e099b0254);
+        
+    
+        var popup_be19f940dfdf827be9b3193a233b7a0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a7dd9c2cf829d3cc7ba3c4c5766bb75 = $(`<div id="html_8a7dd9c2cf829d3cc7ba3c4c5766bb75" style="width: 100.0%; height: 100.0%;">동작구:  미세먼지 25㎍/㎥</div>`)[0];
+                popup_be19f940dfdf827be9b3193a233b7a0c.setContent(html_8a7dd9c2cf829d3cc7ba3c4c5766bb75);
+            
+        
+
+        marker_9281a11297708d151f4829760f448617.bindPopup(popup_be19f940dfdf827be9b3193a233b7a0c)
+        ;
+
+        
+    
+    
+            var marker_8741a97caac80296298cf8f59c735c5d = L.marker(
+                [37.49440543, 126.8563006],
+                {}
+            ).addTo(map_7bebaa89fbcdca2af0707e7d65bb4740);
+        
+    
+            var icon_3249b424c38a5b8501d05a3ad28b66d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8741a97caac80296298cf8f59c735c5d.setIcon(icon_3249b424c38a5b8501d05a3ad28b66d0);
+        
+    
+        var popup_783197d4ea5e53106208af1116b48ac3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52abb942ff822f4b5f57cf9de60b9e21 = $(`<div id="html_52abb942ff822f4b5f57cf9de60b9e21" style="width: 100.0%; height: 100.0%;">구로구:  미세먼지 28㎍/㎥</div>`)[0];
+                popup_783197d4ea5e53106208af1116b48ac3.setContent(html_52abb942ff822f4b5f57cf9de60b9e21);
+            
+        
+
+        marker_8741a97caac80296298cf8f59c735c5d.bindPopup(popup_783197d4ea5e53106208af1116b48ac3)
+        ;
+
+        
+    
+    
+            var marker_b43cf40bd610b2c77215921b86524033 = L.marker(
+                [37.47329547, 127.0312203],
+                {}
+            ).addTo(map_7bebaa89fbcdca2af0707e7d65bb4740);
+        
+    
+            var icon_bee4cf0b915cd25f38b0fc548029d918 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b43cf40bd610b2c77215921b86524033.setIcon(icon_bee4cf0b915cd25f38b0fc548029d918);
+        
+    
+        var popup_ca2c796b4d022244188e26cbd8273e16 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e1a02420a24d4c45a474de362669e20 = $(`<div id="html_3e1a02420a24d4c45a474de362669e20" style="width: 100.0%; height: 100.0%;">서초구:  미세먼지 28㎍/㎥</div>`)[0];
+                popup_ca2c796b4d022244188e26cbd8273e16.setContent(html_3e1a02420a24d4c45a474de362669e20);
+            
+        
+
+        marker_b43cf40bd610b2c77215921b86524033.bindPopup(popup_ca2c796b4d022244188e26cbd8273e16)
+        ;
+
+        
+    
+    
+            var marker_ed79fb9527aa9075ab247f37a1aaf7f1 = L.marker(
+                [37.49664389, 127.0629852],
+                {}
+            ).addTo(map_7bebaa89fbcdca2af0707e7d65bb4740);
+        
+    
+            var icon_cf150456b89bf05c99f05a0f782258a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ed79fb9527aa9075ab247f37a1aaf7f1.setIcon(icon_cf150456b89bf05c99f05a0f782258a7);
+        
+    
+        var popup_18608feccab8702265e3fdc447233a22 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_edfbd8dfe71154a7e12637a0956afd2a = $(`<div id="html_edfbd8dfe71154a7e12637a0956afd2a" style="width: 100.0%; height: 100.0%;">강남구:  미세먼지 24㎍/㎥</div>`)[0];
+                popup_18608feccab8702265e3fdc447233a22.setContent(html_edfbd8dfe71154a7e12637a0956afd2a);
+            
+        
+
+        marker_ed79fb9527aa9075ab247f37a1aaf7f1.bindPopup(popup_18608feccab8702265e3fdc447233a22)
+        ;
+
+        
+    
+    
+            var marker_57e3151aa224ae8513bf01d519a333d6 = L.marker(
+                [37.50561924, 127.115295],
+                {}
+            ).addTo(map_7bebaa89fbcdca2af0707e7d65bb4740);
+        
+    
+            var icon_da622efba905f55eb5e9c6fa880d9cd7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_57e3151aa224ae8513bf01d519a333d6.setIcon(icon_da622efba905f55eb5e9c6fa880d9cd7);
+        
+    
+        var popup_fb5dc3b5f06e31757c18614be7f6c147 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7fd3ffafade0de6f4c583a23f342eafb = $(`<div id="html_7fd3ffafade0de6f4c583a23f342eafb" style="width: 100.0%; height: 100.0%;">송파구:  미세먼지 26㎍/㎥</div>`)[0];
+                popup_fb5dc3b5f06e31757c18614be7f6c147.setContent(html_7fd3ffafade0de6f4c583a23f342eafb);
+            
+        
+
+        marker_57e3151aa224ae8513bf01d519a333d6.bindPopup(popup_fb5dc3b5f06e31757c18614be7f6c147)
+        ;
+
+        
+    
+    
+            var marker_2009d81c643dd722333465ba5e6b77e3 = L.marker(
+                [37.55045024, 127.1470118],
+                {}
+            ).addTo(map_7bebaa89fbcdca2af0707e7d65bb4740);
+        
+    
+            var icon_03d1147698ded9d18471b10f5429b198 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2009d81c643dd722333465ba5e6b77e3.setIcon(icon_03d1147698ded9d18471b10f5429b198);
+        
+    
+        var popup_dc9e8a8ffb83bbba484b3d1c25783a60 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_602ba56a0e1b67eec4b835ffdb54ae37 = $(`<div id="html_602ba56a0e1b67eec4b835ffdb54ae37" style="width: 100.0%; height: 100.0%;">강동구:  미세먼지 26㎍/㎥</div>`)[0];
+                popup_dc9e8a8ffb83bbba484b3d1c25783a60.setContent(html_602ba56a0e1b67eec4b835ffdb54ae37);
+            
+        
+
+        marker_2009d81c643dd722333465ba5e6b77e3.bindPopup(popup_dc9e8a8ffb83bbba484b3d1c25783a60)
+        ;
+
+        
+    
+    
+            var marker_0fa740a532dfa8e4280c08942d1da923 = L.marker(
+                [37.53138497, 126.979907],
+                {}
+            ).addTo(map_7bebaa89fbcdca2af0707e7d65bb4740);
+        
+    
+            var icon_f55035a92a718421c1e5f33419c0540b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0fa740a532dfa8e4280c08942d1da923.setIcon(icon_f55035a92a718421c1e5f33419c0540b);
+        
+    
+        var popup_384a34e7ee0deabdde2b02b9827a8b72 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb8f30c61e957189b5c9fb263c0b912b = $(`<div id="html_cb8f30c61e957189b5c9fb263c0b912b" style="width: 100.0%; height: 100.0%;">용산구:  미세먼지 27㎍/㎥</div>`)[0];
+                popup_384a34e7ee0deabdde2b02b9827a8b72.setContent(html_cb8f30c61e957189b5c9fb263c0b912b);
+            
+        
+
+        marker_0fa740a532dfa8e4280c08942d1da923.bindPopup(popup_384a34e7ee0deabdde2b02b9827a8b72)
+        ;
+
+        
+    
+</script>
+</html>
